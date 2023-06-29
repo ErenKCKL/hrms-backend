@@ -31,4 +31,7 @@ public class Employee extends User{
 
     @Column(name = "birth_date", nullable = true)
     private LocalDate birthDate;
+
+    @Column(name = "is_verified")
+    private boolean isVerified;
 }

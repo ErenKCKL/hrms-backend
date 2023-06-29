@@ -84,9 +84,5 @@ public class EmployeeController {
         boolean exists = employeeService.existsByNationalIdentity(nationalIdentity);
         return ResponseEntity.ok(exists);
     }
-
-
-
-
-
+    
 }

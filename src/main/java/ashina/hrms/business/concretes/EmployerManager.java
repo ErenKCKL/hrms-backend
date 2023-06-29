@@ -3,7 +3,6 @@ package ashina.hrms.business.concretes;
 import ashina.hrms.business.abstracts.EmployerService;
 import ashina.hrms.dataAccess.abstracts.EmployerDao;
 import ashina.hrms.entities.concretes.Employer;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

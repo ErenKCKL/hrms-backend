@@ -1,8 +1,8 @@
-# AS <NAME> to name this stage as maven
-FROM maven:3.6.3 AS maven
-LABEL MAINTAINER="ernkckl09@gmail.com"
+FROM openjdk:17-jdk
 
-WORKDIR /usr/src/app
-COPY . /usr/src/app
-# Compile and package the application to an executable JAR
-RUN mvn package
+WORKDIR /app
+COPY target/hrms-0.0.1-SNAPSHOT.jar hrms.jar
+
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "hrms.jar"]
